@@ -74,22 +74,23 @@
 
         <!-- contato -->
         <section class="py-3">
-            <!-- padding em cima e em baixo -->
+            <!-- padding em cima e embaixo -->
             <div class="container text-center">
                 <h1>Ana Santos</h1>
                 <h3 class="font-italic font-weight-light pb-2">Desenvolvedora front-end</h3>
                 <!-- pb - padding-botton -->
-                <div class="d-flex justify-content-around redes-sociais">
+                <div class="d-flex flex-column flex-lg-row justify-content-around redes-sociais">
                     <a href="" target="_blank">
-                        <i class="fab fa-github-alt"></i>
+                        <i class="fab fa-github-alt p-2"></i>
+                        <!-- i = ícone -->
                         <span>github.com/nome</span>
                     </a>
                     <a href="" target="_blank">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin p-2"></i>
                         <span>linkedin.com/nome</span>
                     </a>
                     <a href="" target="_blank">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope p-2"></i>
                         <span>nome@gmail.com</span>
                     </a>
                 </div>
@@ -98,69 +99,144 @@
     </header>
 
     <!-- seções - habilidades e sobre -->
-    <section>
-        <h3>Habilidades</h3>
-        <div>
-            <i class="fab fa-html5"></i>
-            <p>HTML</p>
+    <section class="bg-roxo text-white text-center py-4">
+        <div class="container d-flex flex-column flex-lg-row align-items-start">
+            <!-- o site ficou responsivo porque foi colocado o "lg" para telas grandes -->
+            <div class="d-flex flex-column justify-content-center w-50">
+                <h3>Habilidades</h3>
+                <div class="row justify-content-center align-items-center text-center habilidades">
+                    <div class="col-2">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+    
+                    <div class="col-2">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+    
+                    <div class="col-2">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="w-100"></div>
+    
+                    <div class="col-2">
+                        <i class="fab fa-sass"></i>
+                        <p>Sass</p>
+                    </div>
+                    <div class="col-2">
+                        <i class="fas fa-book"></i>
+                        <p>jQuery</p>
+                    </div>
+                    <div class="col-2">
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="w-100"></div>
+    
+    
+                    <div class="col-2">
+                        <i class="fab fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="col-2">
+                        <i class="fab fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="col-2">
+                        <i class="fas fa-tasks"></i>
+                        <p>Scrum</p>
+                    </div>
+                </div>
+            </div>
+    
+            <section class="sobre w-50">
+                <h3>Sobre</h3>
+                <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam
+                    modi
+                    magni asperiores? <span>Impedit qui saepe necessitatibus exercitationem </span> Impedit qui saepe
+                    necessitatibus exercitationem debitis perspiciatis ex. Porro ut iste.</p>
+                <p>Outras áreas de interesse: <span>metodologias ágeis, UX, Python, Clojure</span>.</p>
+            </section>
         </div>
-        <div>
-            <i class="fab fa-css3-alt"></i>
-            <p>CSS</p>
-        </div>
-        <div>
-            <i class="fab fa-js"></i>
-            <p>JavaScript</p>
-        </div>
-        <div>
-            <i class="fab fa-sass"></i>
-            <p>Sass</p>
-        </div>
-        <div>
-            <i class="fas fa-book"></i>
-            <p>jQuery</p>
-        </div>
-        <div>
-            <i class="fab fa-react"></i>
-            <p>React</p>
-        </div>
-        <div>
-            <i class="fab fa-bootstrap"></i>
-            <p>Bootstrap</p>
-        </div>
-        <div>
-            <i class="fab fa-git-alt"></i>
-            <p>Git</p>
-        </div>
-        <div>
-            <i class="fas fa-tasks"></i>
-            <p>Scrum</p>
-        </div>
-
-        <section>
-            <h3>Sobre</h3>
-            <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam modi
-                magni asperiores? <span>Impedit qui saepe necessitatibus exercitationem </span> Impedit qui saepe
-                necessitatibus exercitationem debitis perspiciatis ex. Porro ut iste.</p>
-            <p>Outras áreas de interesse: <span>metodologias ágeis, UX, Python, Clojure</span>.</p>
-        </section>
     </section>
 
     <!-- cards - meus projetos -->
-    <section>
-        <h3>Portfólio</h3>
-        <!-- cards -->
-        <!-- modais -->
-        <img src="./assets/images/modal-01.jpg" alt="">
-        <img src="./assets/images/modal-02.jpg" alt="">
-        <img src="./assets/images/modal-03.jpg" alt="">
+    <section class="py-4">
+        <div class="container text-center">
+
+            <h3>Portfólio</h3>
+            <div class="row justify-content-center">
+
+                <!-- cards 01-->
+                <div class="card tamanho-card">
+                    <img class="card-img-top imagem-card" src="./assets/images/modal-01.png"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                            preencher o
+                            conteúdo do card.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal01">Visitar</a>
+                    </div>
+                </div>
+
+                <!-- modal card 01 -->
+                <div class="modal" tabindex="-1" role="dialog" id="modal01">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Título do modal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Texto do corpo do modal, é aqui.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- cards 02-->
+                <div class="card tamanho-card">
+                    <img class="card-img-top imagem-card" src="./assets/images/modal-02.png"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                            preencher o
+                            conteúdo do card.</p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+                <!-- cards 03-->
+                <div class="card tamanho-card">
+                    <img class="card-img-top imagem-card" src="./assets/images/modal-03.png"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                            preencher o
+                            conteúdo do card.</p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- footer -->
-    <footer>
-        <small>Desenvolvido com Bootstrap por Nome enquanto aluna da<span><a href="http://reprograma.com.br/index.html"
-                    target="_blank">{reprograma}</a></span> 2019</small>
+    <footer class="bg-roxo text-white text-center">
+        <small class="">Desenvolvido com Bootstrap por Nome enquanto aluna da<span><a class="text-white" href="http://reprograma.com.br/index.html" target="_blank"> {reprograma}</a></span> 2019</small>
     </footer>
 
     <!-- adicionar jQuery aqui! -->

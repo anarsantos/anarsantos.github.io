@@ -32,3 +32,26 @@ nav a:hover {
 .redes-sociais span:hover {
     color: #7E459B;
 }
+
+.container {
+    font-size: 20px;
+    font-size: 13px;
+}
+
+.habilidades i {
+    font-size: 1.5rem;
+}
+
+/* .habilidades p {
+    font-size: 12px;
+} */
+
+.tamanho-card {
+    width: 18rem;
+}
+
+.imagem-card {
+    object-fit: cover;
+    object-position: top;
+    height: 40vh;
+}
