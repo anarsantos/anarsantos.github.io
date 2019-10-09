@@ -42,9 +42,6 @@ nav a:hover {
     font-size: 1.5rem;
 }
 
-/* .habilidades p {
-    font-size: 12px;
-} */
 
 .tamanho-card {
     width: 18rem;
@@ -54,4 +51,17 @@ nav a:hover {
     object-fit: cover;
     object-position: top;
     height: 40vh;
+}
+
+.imagens-modal {
+    width: 28rem;
+}
+
+.botao {
+    background-color: #7E459B;
+    color: white;
+}
+
+.link-reprograma {
+    color:  rgb(190, 122, 224);
 }
